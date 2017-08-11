@@ -1,0 +1,22 @@
+{
+  "name": "react-native-wakeful",
+  "version": "0.1.0",
+  "description": "React Native module for holding the android's `PowerManager.WakeLock` and `WifiManager.WifiLock`.",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironsmile/react-native-wakeful.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "keep-alive",
+    "wakelock",
+    "wifilock"
+  ],
+  "author": "Doychin Atanasov <ironsmile@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.8.0"
+  }
+}
