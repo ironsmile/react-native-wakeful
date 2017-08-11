@@ -79,4 +79,29 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
 Make sure you request the android.permission.WAKE_LOCK permission in an <uses-permission> element of the application's manifest.
 
-!TODO
+Then you can use the Wakeful module this way:
+
+```javascript
+import Wakeful from 'react-native-wakeful';
+
+let wakeful = new Wakeful();
+wakeful.acquire();
+
+// Do your stuff
+
+wakeful.release();
+```
+
+## API
+
+The wakeful class has the following methods:
+
+* `void acquire()` - will acquire both the WifiLock and WakeLock
+* `void release()` - will release both the WifiLock and WakeLock
+* `bool isHeld()` - `true` when the locks are held and `false` otherwise
+
+Double-acquires and double-releases are not a problem. They are considered as no-ops.
+
+## Non Android platforms
+
+This module can be installed to non Android platforms and then all of its operations would be simulated. So you can safely install it in a multi-platform project and it would not cause you build or runtime errors.
