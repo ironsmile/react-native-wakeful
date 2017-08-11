@@ -77,7 +77,10 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 
 ## Basic usage
 
-Make sure you request the android.permission.WAKE_LOCK permission in an <uses-permission> element of the application's manifest.
+Make sure you request the android.permission.WAKE_LOCK permission in an <uses-permission> element of the application's manifest. In your project's `android/app/src/main/AndroidManifest.xml` add the following:
+```xml
+<uses-permission android:name="android.permission.WAKE_LOCK"/>
+```
 
 Then you can use the Wakeful module this way:
 
