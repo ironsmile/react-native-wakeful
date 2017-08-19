@@ -1,3 +1,5 @@
+[![npm](https://badge.fury.io/js/react-native-wakeful.svg)](https://www.npmjs.com/package/react-native-wakeful)
+
 # react-native-wakeful
 
 React Native module for holding the android's `PowerManager.WakeLock` and `WifiManager.WifiLock`.
